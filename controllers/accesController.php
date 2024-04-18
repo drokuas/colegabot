@@ -51,6 +51,9 @@ if (isset($_POST['opcion'])) { // en caso de haber una solicitud de tipo POST
     }elseif ($opc=="desplegarLogin") { // si valor de opc es desplegar, traera pagina de login a index
         require_once('./views/login.php');
     }
+    elseif($opc == "desplegarRegistro"){
+        require_once('./views/registro.php');
+    }
 }else{
-    require_once('./views/registro.php'); // abre home del sitio ya que nohay ninguna solicitud
+    require_once('./views/home.php'); // abre home del sitio ya que nohay ninguna solicitud
 }

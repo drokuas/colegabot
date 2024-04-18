@@ -23,7 +23,7 @@
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header">
                                     <a href="./index.php">
-                                        <img class="rounded mx-auto d-block" src="../img//bot1.png" alt="" height="60px">
+                                        <img class="rounded mx-auto d-block" src="../public/img/bot1.png" alt="" height="60px">
                                     </a>
                                     <h3 class="text-center font-weight-light my-4">Inicia Sesión</h3>
                                 </div>
@@ -49,7 +49,10 @@
                                     </form>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <div class="small"><a href="register.html">¿Necesito una cuenta? ¡Inscribirse!</a></div>
+                                <form method="post" action="#">
+                            <input type="hidden" name="opcion" value="desplegarRegistro">
+                            <button class="btn btn-primary">Eres Nuevo en ColegaBot? Crea Una Cuenta</button>
+                        </form>
                                 </div>
                             </div>
                         </div>
